@@ -1,0 +1,184 @@
+/*@font-face {
+    font-family: Unbounded;
+    src: url(/site/Fontes/Unbounded-Bold.ttf);
+    font-display: swap; para quando o navegador demorar para carregar a fonte
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/site/Fontes/Poppins-Regular.ttf);
+}
+/* fontes pode ser por link ou por documento na pasta do arquivo(fazer pela pastas)*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+/* SE O TEXTO DE TODA A PAGINA FOR DE UMA COR SÓ, COLOCAR NO BODY, SE NÃO COLOCAR NAS CLASSES E TIRAR DO BODY*/
+/*CLASSES USAR ESPECIFICOS*/
+
+.titulo, .span, .p, .a, 
+
+.titulo {
+    font-size: 64px;
+    font-family: "Unbounded";
+    font-weight: bold;
+    text-align: center; /*centralizar texto*/
+
+
+}
+.span {
+    color: #9747FF;
+}
+
+p{
+    font-family: "Poppins" ;
+    font-size:  24px; /*tamanho da fonta*/
+    text-align: center;
+    margin-top: 24px;
+    margin: 50px 250px 60px 250px;/* ajustar o paragrafo conforme o despositivo*/
+}
+
+a{
+    text-decoration: none;/*tirar aquela barra de baixo do link*/
+    color: #FFFFFF;
+    font-family: "Unbounded";
+    font-size: 18px; /*tamanho da fonte*/
+    background-color: #9747FF;
+    width: 340px; /* largura*/
+    height: 66px; /*altura*/
+    display: block; /*Transformar em um botão*/
+    text-align: center; /*centralizar texto*/
+    line-height: 66px; /*modificar texto dentro do botão*/
+    border-radius: 36px; /*arredondar bordas*/
+  /*centralizar texto em block(botao) sentido horario*/
+    /*margin-top: 40px;
+    margin-right: 790px; /*Bloco para a esquerda*/
+    /*margin-bottom: 10px;
+    margin-left: 790px; /*Bloco para a direita*//*
+
+    /*ou em seguencia. com lados ou cima em baixo diferentes tamanhos mas se não por exemplo em cima e nos lado mesmo tanho 
+    margin: 40px 790px;  ou usar auto */
+
+    /*margin: 40px 790px 10px 790px;*/
+    margin: 40px 790px;
+
+}
+
+a:hover{
+    background-color: #8233E8;
+}
+
+
+.imagem {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 40px auto;
+}
+
+.imagem-logo {
+    display: block;
+    text-align: center;
+    width: 210px;
+    height: auto;
+    margin: 75px 0 15px 360px;
+}
+
+/*.tema {
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: auto;
+    margin: 0px 0 0 1450px;
+}*/
+
+ @media(max-width: 768px){
+
+    body{
+        .imagem-logo{
+            display: block;
+            margin: 35px 450px 20px 60px;
+            width: 150px;
+        }
+
+        .titulo{
+            font-size: 45px;
+            }
+
+        .span{
+            font-size: 45px;
+
+        }
+        p{
+            font-size: 30px;
+            margin: 40px 20px 20px 20px;
+
+        }
+
+        a{
+            margin: 40px 1102px 90px 30px;
+        }
+
+        .imagem{
+            width: 95%;
+            max-width: 450x;
+            height: auto;
+        }
+    }
+    
+ }
+
+ @media(max-width: 375px) {
+    body{
+        .imagem-logo{
+            display: block;
+            margin: 32px 149px 50px 20px;
+            width: 90%;
+        }
+
+        .titulo, .span {
+            display: block;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        a{
+            
+            margin: 20px 30px 20px 10px;
+        }
+
+        .imagem {
+            width: 95%;
+            height: auto;
+        }
+    
+    }
+    
+ }
+    
+
+
+/* position: relative;
+    max-width: 190px;
+    margin: 50px;
+    padding: 10px;
+    left: 80px;
+    */
+
+
+    /*max-width: 190px; define a largura máxima que um elemento HTML pode ter
+    height: 30px; /*Define a altura*/
+
+    /*order: red 3px solid; /*bom para identificar as bordas, primeiro cor, depois tamanho e de modelo*/
+    /*margin-top: 20px; /* margen do topo*/
+    /*margin-bottom: 20px; /* margen de baixo*/
+    /*margin-left: 50px; /*margem direita*/
+    /*margin-right: 50px; /*margem esquerda*/
+    /*padding: 30px;/*
